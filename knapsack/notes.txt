@@ -1,0 +1,9 @@
+Any problem that has a pattern similar to knapsack can be solved using the same concept.
+Problems in which we will have to choose objects according to optimism and a given contrain sum.
+
+Some examples of knapsack pattern problems are - 
+1. Subset sum problem
+2. Equal sum partition
+3. Count of subset sum
+4. Minimum subset sum difference
+5. Target sum
