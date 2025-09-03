@@ -1,0 +1,33 @@
+In an unbounded knapsack, an item that has not been chosen/selected is considered as processed and will not be considered again for the selection.
+On the other hand, an item, which has been chosen/selected is not considered as processed and can be selected multiple times.
+
+Real world example - 
+If someone doesnt like ice cream, then he will deny it at once and will not opt for it anytime.
+But if someone likes ice cream, then he could also opt for it multiple times even after eating one.
+
+Difference with knapsack 0/1
+knapsack 0/1 -
+- every item is considered for selection only once, either selected ot not selected.
+unbounded knapsack - 
+- unselected item is not considered for further process, whereas a selected item is processed multiple times.
+
+Example - 
+n = 3   (number of items)
+W = 10  (capacity of knapsack)
+
+weights = [2, 3, 4]
+values  = [10, 14, 16]
+
+📌 Expected Output
+
+We want to maximize total value.
+If we take 5 copies of A (weight 2) → total weight = 10, value = 50.
+If we take 3 copies of B (weight 3) + 1 copy of A (weight 2) → weight = 11 ❌ (too much).
+If we take 2 copies of B (weight 3) + 1 copy of C (weight 4) → total weight = 10, value = 44.
+If we take 2 copies of C (weight 4) + 1 copy of A (weight 2) → total weight = 10, value = 42.
+
+✅ Best choice: 5 × A = value 50.
+
+Pattern based problems - 
+1. Rod cutting problem
+2. Coin exchange problem
